@@ -68,26 +68,6 @@ Output structure
 }
 ```
 
-### Command Line
-
-A command line tool to extract an .eml file into a folder. The output directory will be populated with .txt and .html message and attachment files.
-```
-Usage:
-  eml-unpack [options] [message.eml] [directory]
-
-Options:
-  --help       Print this message
-  --verbose    Enable detailed logging
-  --version    Print version number
-  --json       Create parsed.json and manifest.json
-  --no-unpack  Used with --json to skip unpacking
-
-Examples:
-  eml-unpack message.eml .
-  eml-unpack --verbose sample.eml folder
-  eml-unpack --json --no-unpack ./sample.eml ./folder
-```
-
 ## Reference
 
 ### read(eml, [options], callback)
